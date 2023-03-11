@@ -24,6 +24,7 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/features/*.feature",
     baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
+    experimentalSessionAndOrigin: true,
     env: {
       MAILOSAUR_API_KEY: "iNC52R0us7OIIuzk",
     },

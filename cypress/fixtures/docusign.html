@@ -10,6 +10,9 @@
 
     
     <link rel="icon" type="image/png" href="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/favicon-16x16.png" sizes="16x16"/><link rel="icon" type="image/png" href="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/favicon-32x32.png" sizes="32x32"/><link rel="apple-touch-icon" sizes="180x180" href="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/apple-touch-icon-180x180.png"/><link rel="icon" type="image/png" href="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/android-chrome-192x192.png" sizes="192x192"/><link rel="icon" type="image/png" href="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/android-chrome-512x512.png" sizes="512x512"/><link rel="mask-icon" href="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/favicon.svg" color="#000000"/><meta name="msapplication-TileColor" content="#d6fb00"/><meta name="msapplication-TileImage" content="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/mstile-144x144.png"/><meta name="msapplication-square150x150logo" content="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/mstile-150x150.png"/><meta name="theme-color" content="#000000"/><link rel="shortcut icon" href="https://docucdn-a.akamaihd.net/olive/images/2.15.0/favicons/favicon.ico"/>
+
+
+
             <script>
             window.DSSigning = { init: function (initOpts) { this._initOpts = initOpts } };
             window.DSSigningReady = true;
@@ -86,25 +89,30 @@
                     })();
             
 
-        (function () {
             
-            window.cdnURL = '/Signing/SigningApp/latest/';
-            window.primaryCdnUrl = window.cdnURL;
-            window.fallbackCdnEnabled = false;
-            window.cdnUrlsAttempted = [window.cdnURL];
-            window.cdnDidFallback = false;
 
+            (function () {
                 
-                    window.fallbackCdnUrl = null;
-                
+                window.cdnURL = '/Signing/SigningApp/latest/';
+                window.primaryCdnUrl = window.cdnURL;
+                window.fallbackCdnEnabled = false;
+                window.cdnUrlsAttempted = [window.cdnURL];
+                window.cdnDidFallback = false;
+
+                    
+                        window.fallbackCdnUrl = null;
+                    
 
 
 
-        })();
-
+            })();
+            
 
         (function () {
-            window.suggestedLogicalSession = '8a9ca6af-b124-47f2-950c-5a6a55952c08';
+            window.suggestedLogicalSession = '2932eff6-ca32-4d98-8018-56ae80c04941';
+            
+            window.cookieBanner = {"CookieDisclaimerText":"This site uses cookies, some of which are required for the operation of the site.","LearnMoreText":"Learn More","OKButtonText":"OK","OpenLinkInNewWindowText":"This link will open in a new window.","PrivacyPolicyUrl":"https://www.docusign.com/company/privacy-policy"};
+            
 
                 
                 
@@ -148,20 +156,20 @@
                     var redirectPath;
                     if (true) {
                         if (window.navigator != null && document.querySelectorAll != null) {
-                            redirectPath = '/signing/error/unsupportedbrowser?ti=c70b0a31c5b341b5a0c943d076e35937&unsupportedReason=OldBrowser';
+                            redirectPath = '/signing/error/unsupportedbrowser?ti=cb3c660b003d41448fc96581fe33505b&unsupportedReason=OldBrowser';
                         } else if (window.navigator == null && document.querySelectorAll != null) {
                             unsupportedReason = 'window.navigator = null';
-                            redirectPath = '/signing/error/unsupportedbrowser?ti=c70b0a31c5b341b5a0c943d076e35937&unsupportedReason=NavigatorNull';
+                            redirectPath = '/signing/error/unsupportedbrowser?ti=cb3c660b003d41448fc96581fe33505b&unsupportedReason=NavigatorNull';
                         } else if (window.navigator != null && document.querySelectorAll == null) {
-                            redirectPath = '/signing/error/unsupportedbrowser?ti=c70b0a31c5b341b5a0c943d076e35937&unsupportedReason=QuerySelectorAllNull';
+                            redirectPath = '/signing/error/unsupportedbrowser?ti=cb3c660b003d41448fc96581fe33505b&unsupportedReason=QuerySelectorAllNull';
                         } else {
-                            redirectPath = '/signing/error/unsupportedbrowser?ti=c70b0a31c5b341b5a0c943d076e35937&unsupportedReason=NavigatorQuerySelectorNull';
+                            redirectPath = '/signing/error/unsupportedbrowser?ti=cb3c660b003d41448fc96581fe33505b&unsupportedReason=NavigatorQuerySelectorNull';
                         }
                     } else {
-                        redirectPath = '/signing/error/unsupportedbrowser?ti=c70b0a31c5b341b5a0c943d076e35937';
+                        redirectPath = '/signing/error/unsupportedbrowser?ti=cb3c660b003d41448fc96581fe33505b';
                     }
                     window.navigator.sendBeacon(
-                        'monitoring?ti=c70b0a31c5b341b5a0c943d076e35937',
+                        'monitoring?ti=cb3c660b003d41448fc96581fe33505b',
                         JSON.stringify({
                             EventSource: 'AppEvent',
                             MonitoringProperties: Object.assign({
@@ -184,9 +192,29 @@
         })();
 
 
-        (function () {
+        // (function () {
             
-        })();
+            
+        //     if (pageInFrame()) {
+        //         var bdy = document.getElementsByTagName('body');
+        //         if (bdy) {
+        //             bdy[0].style.display = 'none';
+        //         }
+        //         window.open(window.self.location);
+                
+        //         window.location.replace('/signing/error/frameblocked');
+        //     }
+
+        //     function pageInFrame() {
+        //         try {
+        //             return window.self !== window.top;
+        //         } catch (e) {
+                    
+        //             return true;
+        //         }
+        //     }
+            
+        // })();
 
 
         (function () {
@@ -219,7 +247,7 @@
 
                 try {
                     window.navigator.sendBeacon(
-                        'monitoring?ti=c70b0a31c5b341b5a0c943d076e35937',
+                        'monitoring?ti=cb3c660b003d41448fc96581fe33505b',
                         JSON.stringify({
                             EventSource: 'AppEvent',
                             MonitoringProperties: Object.assign({
@@ -240,7 +268,7 @@
                 try {
                     var aryaUuid = window.DS_Arya.g().DS_A;
                     window.navigator.sendBeacon(
-                        'monitoring?ti=c70b0a31c5b341b5a0c943d076e35937',
+                        'monitoring?ti=cb3c660b003d41448fc96581fe33505b',
                         JSON.stringify({
                             EventSource: 'AppEvent',
                             MonitoringProperties: {
@@ -252,20 +280,22 @@
             })();
         </script>
 
-<input name="__RequestVerificationToken" type="hidden" value="AcvbpVhChuFrcKSrutUvRucAAAAA0" />
+<input name="__RequestVerificationToken" type="hidden" value="AWphFchsPuzFoIzFfCRaJbQAAAAA0" />
 <input name="__SigningAccessToken" type="hidden" autocomplete="off">
 
-        
-            <script>window.experimentInfo = { experimentName: 'iframeless', variationName: 'mobile' };</script>
+
             
-                <script src="/Signing/SigningApp/latest/signing_iframeless_mobile.js?cs=60f001acb"></script>
-        
+                <script>window.experimentInfo = { experimentName: 'iframeless', variationName: 'mobile' };</script>
+
+                    <script src="/Signing/SigningApp/latest/signing_iframeless_mobile.js?cs=81f32c12a"></script>
+            
+
 
     
         <script>
             function sendExitLogEvent() {
                 window.navigator.sendBeacon(
-                    'monitoring?ti=c70b0a31c5b341b5a0c943d076e35937',
+                    'monitoring?ti=cb3c660b003d41448fc96581fe33505b',
                     JSON.stringify({
                         EventSource: 'AppEvent',
                         MonitoringProperties: {
@@ -312,7 +342,7 @@
                 if (!isAppLoaded) {
                     
                     window.navigator.sendBeacon(
-                        'monitoring?ti=c70b0a31c5b341b5a0c943d076e35937',
+                        'monitoring?ti=cb3c660b003d41448fc96581fe33505b',
                         JSON.stringify({
                             EventSource: 'AppEvent',
                             MonitoringProperties: {
@@ -336,6 +366,7 @@
             })();
         </script>
     
+
 
 </body>
 </html>
