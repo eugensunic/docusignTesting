@@ -4,7 +4,8 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 Given("A web browser is at the saucelabs login page", () => {
   const serverId = "fp3iq6ol";
   const recipientEmailAddress = "joined-substance@fp3iq6ol.mailosaur.net";
-  cy.visit("https://www.index.hr/");
+  cy.visit("https://www.coffeetocup.com/");
+  // working argument: { fixture: "docusign.html" }
   cy.intercept("GET", "**/Signing/?ti**", {}).as("docIntercept");
 
   cy.mailosaurGetMessage(
